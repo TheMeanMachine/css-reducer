@@ -1,0 +1,31 @@
+{
+  "name": "css-reducer",
+  "version": "1.0.0",
+  "description": "Reduces CSS to rubble!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "css": "^3.0.0",
+    "css-parse": "^2.0.0",
+    "cssparser": "^0.9.4",
+    "fs-extra": "^9.0.1",
+    "glob-fs": "^0.1.7",
+    "node-html-parser": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMeanMachine/css-reducer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheMeanMachine/css-reducer/issues"
+  },
+  "homepage": "https://github.com/TheMeanMachine/css-reducer#readme"
+}
