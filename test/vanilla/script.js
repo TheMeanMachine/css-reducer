@@ -2,6 +2,6 @@ function changeElement( element ){
 	if( !element )
 		return;
 
-	element.classList.add(  );
+	element.classList.add( 'test-add-class' );
 
 }

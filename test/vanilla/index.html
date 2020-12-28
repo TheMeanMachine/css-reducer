@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./style.css">
+		<script src="./script.js"></script>		
+	</head>
+	<body>
+		<div class="testContainer">
+			<div class="testContainerTop">
+				<h1 class="testContainerHeading">My First Heading</h1>
+
+				<p id="test-el" class="testContainerSubtext">My first paragraph.</p>
+			</div>
+			<div class="testContentContainer">
+				<h1 class="testContainerHeading">My Second Heading</h1>
+
+				<p class="testContainerContentText random class  somewhere">My Second paragraph.</p>
+			</div>
+		</div>
+		<script>
+			var el = document.getElementById('test-el');
+			el.classList.add('a');
+		</script>
+	</body>
+</html>
