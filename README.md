@@ -25,3 +25,7 @@ Reduces CSS to rubble!
 
 ### 4
 [ ] Modify files
+
+Ideas:
+
+Find inline styles and produce these as classes
