@@ -1,5 +1,4 @@
 const root = process.cwd();
-const config = require( root + '/config' );
 
 const { Discover } = require( root + '/src/discover.js' );
 const { Parse } = require( root + '/src/parse/parse.js' );
@@ -13,7 +12,7 @@ const main = () => {
 
 	parse.css( discover.css() );
 	parse.html( discover.html() );
-	//parse.js( discover.js() );
+	parse.js( discover.js() );
 };
 
 main();

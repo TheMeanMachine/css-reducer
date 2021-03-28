@@ -54,7 +54,7 @@ class Discover {
 	}
 
 	html(){
-		var file_arr = [];
+		let file_arr = [];
 		for( const file of this.file_arr.html ){
 			try{
 				file_arr.push( { path: file, contents: this.readFile( file ) } )
@@ -65,7 +65,7 @@ class Discover {
 		return file_arr;
 	}
 	css(){
-		var file_arr = [];
+		let file_arr = [];
 		for( const file of this.file_arr.css ){
 			try{
 				file_arr.push( this.readFile( file ) )
@@ -76,7 +76,7 @@ class Discover {
 		return file_arr;
 	}
 	js(){
-		var file_arr = [];
+		let file_arr = [];
 		for( const file of this.file_arr.js ){
 			try{
 				file_arr.push( this.readFile( file ) )

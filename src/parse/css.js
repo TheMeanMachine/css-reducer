@@ -29,9 +29,7 @@ exports.parse = ( file_arr = [] ) => {
 
 const classSearch = ( selector ) => {
 	const regex = /([.])\w+\w+(?:-\w+)*|/g;//find classes
-	const class_loc_arr = selector.match( regex ).filter(Boolean);
-
-	return class_loc_arr;
+	return selector.match( regex ).filter(Boolean);
 }
 
 const isOwnClass = ( selector, css_class ) => {
@@ -54,9 +52,9 @@ const addClass = ( selector, rule, css_arr ) => {
 			};
 		css_arr[ css_class ].original_selectors.push( selector );
 		if( isOwnClass( selector, css_class ) )
-			css_arr[ css_class ].delarations = rule.declarations;
+			css_arr[ css_class ].declarations = rule.declarations;
 		else
-			css_arr[ css_class ].protected = true;//TODO (AM): this will only support classes declared simply (no children selecting etc)
+			css_arr[ css_class ].protected = true;//TODO (AM): this will only support classes declared simply (no complex selectors, just a plain class declaration)
 		
 	}
 
