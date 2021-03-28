@@ -34,6 +34,7 @@ const classSearch = ( selector ) => {
 
 const isOwnClass = ( selector, css_class ) => {
 	return selector === css_class;
+	
 };
 
 
